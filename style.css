@@ -1,0 +1,130 @@
+/* Map container */
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Search container*/
+#search-container {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Search input */
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+/* Clear button */
+#clear-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    cursor: pointer;
+    color: white;
+}
+
+/* Booking button */
+.book-button {
+    position: fixed;
+    top: 20;
+    right: 10px;
+    width: 100px;
+    padding: 15px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius:8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Hover effects for buttons */
+#clear-button:hover, .book-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Suggestions dropdown */
+#suggestions {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 0px; /* Change this to 0px */
+    width: calc(80% - 30px);
+    left: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 3000; /* You might need to adjust this */
+}
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background: #f0f0f0;
+}
+/* Legend styling */
+#legend {
+    position: absolute;
+    bottom: 80px; /* Adjust this value as needed */
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#legend h3 {
+    margin-top: 0;
+}
+
+#legend p {
+    margin: 5px 0;
+}
+
+#legend .green-bin, #legend .yellow-bin {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+#legend .green-bin {
+    background-color: green;
+}
+
+#legend .yellow-bin {
+    background-color: yellow;
+ /* Highlight selected zone */
+.selected-zone {
+    border: 2px solid blue;
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background */
+}
